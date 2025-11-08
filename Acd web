@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debasis Samal | Accountant & AI Automater</title>
+    <!-- Load Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for contact section -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom styles to replicate the original gradient background */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        /* Custom class for gradient skill/contact cards */
+        .gradient-card {
+            background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gradient-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(102, 126, 234, 0.6);
+        }
+        /* Hover effect for work items */
+        .work-item:hover {
+            transform: translateX(10px);
+        }
+
+        /* Initial state for slide-up animation */
+        .main-content {
+            animation: slideUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        @keyframes slideUp {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        /* Initial state for fade-in animation */
+        header {
+            animation: fadeIn 1s ease-in forwards;
+            opacity: 0;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body class="selection:bg-indigo-300 selection:text-indigo-900">
+    <div class="container max-w-4xl mx-auto p-4 md:p-8">
+        <!-- HEADER SECTION -->
+        <header class="text-center py-12 md:py-20 text-white">
+            <!-- PROFILE IMAGE (First element inside header) -->
+            <img src="uploaded:17626136616682054389583732110525.jpg-99a7ce23-f8bf-4479-abb9-2774ef090c12" 
+                 alt="Debasis Samal Profile Picture"
+                 onerror="this.onerror=null;this.src='https://placehold.co/144x144/a5b4fc/ffffff?text=DS';"
+                 class="profile-img w-36 h-36 mx-auto mb-5 rounded-full border-4 border-white object-cover shadow-lg"
+            />
+            
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-2 leading-tight tracking-wider" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+                Debasis Samal
+            </h1>
+            <p class="tagline text-xl md:text-2xl opacity-95 font-light mb-5">
+                Accountant & AI Automater
+            </p>
+            <p class="bio text-lg max-w-xl mx-auto opacity-90 font-normal">
+                A detail-oriented professional with a passion for **numbers and automation**, bringing precision and innovation to every task.
+            </p>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content bg-white rounded-3xl p-6 md:p-10 shadow-2xl">
+
+            <!-- SKILLS SECTION -->
+            <section class="section mb-10">
+                <h2 class="section-title text-2xl md:text-3xl font-bold text-indigo-600 mb-5 pb-3 border-b-4 border-indigo-200">
+                    Skills
+                </h2>
+                <div class="skills-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="skill-card gradient-card text-white p-6 rounded-xl text-center font-bold shadow-lg">
+                        Accountancy & Auditing
+                    </div>
+                    <div class="skill-card gradient-card text-white p-6 rounded-xl text-center font-bold shadow-lg">
+                        AI Automation
+                    </div>
+                    <div class="skill-card gradient-card text-white p-6 rounded-xl text-center font-bold shadow-lg">
+                        PGDCA & Software Proficiency
+                    </div>
+                </div>
+            </section>
+
+            <!-- WORK EXPERIENCE SECTION -->
+            <section class="section mb-10">
+                <h2 class="section-title text-2xl md:text-3xl font-bold text-indigo-600 mb-5 pb-3 border-b-4 border-indigo-200">
+                    Work Experience
+                </h2>
+                <div class="space-y-4">
+                    <!-- Work Item 1 -->
+                    <div class="work-item bg-gray-50 p-5 rounded-xl border-l-4 border-indigo-500 transition duration-300 shadow-md hover:shadow-xl">
+                        <div class="work-title text-xl font-bold text-indigo-600 mb-1">Accountant</div>
+                        <div class="work-company text-lg text-violet-600 mb-1">Shinghar Textile</div>
+                        <div class="work-period text-gray-600 italic text-sm">2024 - Present</div>
+                    </div>
+                    <!-- Work Item 2 -->
+                    <div class="work-item bg-gray-50 p-5 rounded-xl border-l-4 border-indigo-500 transition duration-300 shadow-md hover:shadow-xl">
+                        <div class="work-title text-xl font-bold text-indigo-600 mb-1">Accountant</div>
+                        <div class="work-company text-lg text-violet-600 mb-1">Vishal Filling Station</div>
+                        <div class="work-period text-gray-600 italic text-sm">2022 - 2024</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EDUCATION SECTION -->
+            <section class="section mb-10">
+                <h2 class="section-title text-2xl md:text-3xl font-bold text-indigo-600 mb-5 pb-3 border-b-4 border-indigo-200">
+                    Education
+                </h2>
+                <div class="space-y-4">
+                    <div class="education-item bg-gray-50 p-5 rounded-xl border-l-4 border-violet-500 shadow-md">
+                        <strong class="text-lg text-gray-800">Post Graduate Diploma in Computer Application (PGDCA)</strong><br>
+                        <span class="text-base text-gray-600">Computer Point - 2023</span>
+                    </div>
+                    <div class="education-item bg-gray-50 p-5 rounded-xl border-l-4 border-violet-500 shadow-md">
+                        <strong class="text-lg text-gray-800">Bachelor of Commerce (B.Com)</strong><br>
+                        <span class="text-base text-gray-600">CBCS System - 2022</span>
+                    </div>
+                    <div class="education-item bg-gray-50 p-5 rounded-xl border-l-4 border-violet-500 shadow-md">
+                        <strong class="text-lg text-gray-800">Higher Secondary (+2)</strong><br>
+                        <span class="text-base text-gray-600">CHSE Odisha - 2019</span>
+                    </div>
+                    <div class="education-item bg-gray-50 p-5 rounded-xl border-l-4 border-violet-500 shadow-md">
+                        <strong class="text-lg text-gray-800">Secondary School (10th)</strong><br>
+                        <span class="text-base text-gray-600">BSE Odisha - 2017</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT ME SECTION -->
+            <section class="section">
+                <h2 class="section-title text-2xl md:text-3xl font-bold text-indigo-600 mb-5 pb-3 border-b-4 border-indigo-200">
+                    Contact Me
+                </h2>
+                <div class="contact-grid grid grid-cols-1 sm:grid-cols-3 gap-6">
+                    <!-- Contact Card: Phone -->
+                    <div class="contact-card gradient-card text-white p-6 rounded-xl text-center shadow-lg hover:scale-[1.03]">
+                        <i data-lucide="phone" class="contact-icon mx-auto w-10 h-10 mb-2"></i>
+                        <div class="contact-label text-sm opacity-90 mb-1">Phone</div>
+                        <div class="contact-info text-lg font-bold">
+                            <a href="tel:9777972977" class="text-white hover:underline transition duration-200">9777972977</a>
+                        </div>
+                    </div>
+                    <!-- Contact Card: Twitter -->
+                    <div class="contact-card gradient-card text-white p-6 rounded-xl text-center shadow-lg hover:scale-[1.03]">
+                        <i data-lucide="twitter" class="contact-icon mx-auto w-10 h-10 mb-2"></i>
+                        <div class="contact-label text-sm opacity-90 mb-1">Twitter</div>
+                        <div class="contact-info text-lg font-bold">
+                            <a href="https://twitter.com/Debaaista" target="_blank" class="text-white hover:underline transition duration-200">@Debaaista</a>
+                        </div>
+                    </div>
+                    <!-- Contact Card: Location -->
+                    <div class="contact-card gradient-card text-white p-6 rounded-xl text-center shadow-lg hover:scale-[1.03]">
+                        <i data-lucide="map-pin" class="contact-icon mx-auto w-10 h-10 mb-2"></i>
+                        <div class="contact-label text-sm opacity-90 mb-1">Location</div>
+                        <div class="contact-info text-lg font-bold">
+                            Cuttack, Odisha
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- FOOTER SECTION -->
+        <footer class="text-center py-8 text-white opacity-90">
+            <p>&copy; 2024 Debasis Samal. All rights reserved.</p>
+            <p class="mt-1 text-sm font-light">Hard Working | Confident | Punctual</p>
+        </footer>
+    </div>
+    
+    <!-- Script to render Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
